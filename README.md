@@ -9,4 +9,4 @@ Using a custom AssemblyLoadContext to illustrate plugin architecture
 > 
 > :bulb: This demo use plugins with different versions of humanizer. By using a custom [AssemblyLoadContext](https://learn.microsoft.com/en-us/dotnet/core/dependency-loading/understanding-assemblyloadcontext), each plugin's dependencies are loaded from the correct location, and one plugin's dependencies will not conflict with another.
 > 
-> **`Tools`** : vs22, net 6.0, humanizer, fluent-validation
+> **`Tools`** : net 8.0, humanizer, fluent-validation

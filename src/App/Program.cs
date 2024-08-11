@@ -3,7 +3,6 @@ using App.Extensions;
 using Microsoft.Extensions.Configuration;
 
 var configuration = new ConfigurationBuilder()
-    .SetBasePath(Directory.GetCurrentDirectory())
     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
     .Build();
 
@@ -22,7 +21,7 @@ if (plugins.Count == 0)
     throw new ApplicationException("No plugins found.");
 }
 
-Console.WriteLine($"Found {plugins.Count} plugin(s).");
+Console.WriteLine($"Found '{plugins.Count}' plugin(s).");
 
 foreach (var plugin in plugins)
 {

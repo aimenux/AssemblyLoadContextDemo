@@ -2,7 +2,7 @@
 using Core;
 using Humanizer;
 
-namespace Plugin.English.Hello;
+namespace Plugin.French.Hello;
 
 public class FrenchPlugin : IPlugin
 {
@@ -26,7 +26,7 @@ public class FrenchPlugin : IPlugin
         for (var index = 0; index <= max; index++)
         {
             var number = index.ToWords(cultureInfo);
-            Console.WriteLine($"{index:D2}: {number}");
+            Console.WriteLine($"- {index:D2}: {number}");
         }
     }
     
